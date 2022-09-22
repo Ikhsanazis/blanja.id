@@ -1,14 +1,11 @@
 import React from "react";
-import Image from "next/image";
 import { Row, Col, Card } from "react-bootstrap";
-import { FiFilter } from "react-icons/fi";
-import { RiShoppingCartLine } from "react-icons/ri";
-import styles from "../styles/Home.module.css";
 import { AiFillStar } from "react-icons/ai";
-function New() {
+
+function NewProduct() {
   return (
     <>
-      <Row xs={1} md={5} className="g-3">
+      <Row xs={1} md={5} className="g-3 mb-5">
         {Array.from({ length: 15 }).map((_, idx) => (
           <Col key={idx}>
             <Card>
@@ -38,4 +35,4 @@ function New() {
   );
 }
 
-export default New;
+export default NewProduct;

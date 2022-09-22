@@ -1,0 +1,14 @@
+.color{
+    width:36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 0px 3px 0px ;
+}
+
+.rounded{
+    border-radius: 50%;
+}
+
+.button{
+    border-radius: 25px;
+}
