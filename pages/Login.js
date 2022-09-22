@@ -14,7 +14,7 @@ function Login() {
     <div lg={12} md={12} className="Login">
       <div
         className=" d-flex justify-content-center "
-        style={{ marginTop: "120px" }}
+        style={{ marginTop: "100px" }}
       >
         <Image
           className="justify-content-center"
@@ -26,16 +26,18 @@ function Login() {
         />
       </div>
       <h5 className="mt-3 text-center">Please login with your account</h5>
-      <div className="d-flex justify-content-center">
+      <div
+        className="d-flex justify-content-center"
+        style={{ margin: "50px 0px  40px 0px " }}
+      >
         <ButtonGroup>
           {radios.map((radio, idx) => (
             <ToggleButton
-              className=""
-              style={{ width: "123px" }}
+              className={style.button} //   style={{ width: "123px" }}
               key={idx}
               id={`radio-${idx}`}
               type="radio"
-              variant={"outline-primary"}
+              //   variant={"outline-primary"}
               name="radio"
               value={radio.value}
               checked={radioValue === radio.value}
@@ -46,16 +48,30 @@ function Login() {
           ))}
         </ButtonGroup>
       </div>
-      <div className="col-6 mx-auto mt-4">
-        <Form className="col-8 mx-auto">
+      <div className={style.form}>
+        <Form className=" mx-auto">
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control size="lg" type="email" placeholder="Enter email" />
+            <Form.Control
+              className="border-primary"
+              size="lg"
+              type="email"
+              placeholder="Enter email"
+            />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control size="lg" type="password" placeholder="Password" />
+            <Form.Control
+              className="border-primary"
+              size="lg"
+              type="password"
+              placeholder="Password"
+            />
           </Form.Group>
           <p className="text-end">Forget Passwor?</p>
-          <Button variant="primary btn-lg w-100" type="submit">
+          <Button
+            type="submit"
+            className="w-100 btn-lg"
+            style={{ borderRadius: "25px", backgroundColor:`#273AC7` }}
+          >
             Submit
           </Button>
           <p className="text-center mt-3">
@@ -63,7 +79,6 @@ function Login() {
           </p>
         </Form>
       </div>
-      <div></div>
     </div>
   );
 }

@@ -127,3 +127,23 @@
     filter: invert(1);
   }
 }
+
+.filter{
+  border: 1px solid #8E8E93;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.filter:hover{
+  border: 1px solid grey;
+}
+
+.button{
+  width:100px;
+  border-radius: 25px;
+}
+.button:hover{
+  background-color: #273AC7;
+}
