@@ -75,7 +75,7 @@ function Login() {
             Submit
           </Button>
           <p className="text-center mt-3">
-            Don't have a Blanja account? Register
+            Don{`'`}t have a Blanja account? Register
           </p>
         </Form>
       </div>

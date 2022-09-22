@@ -16,7 +16,7 @@ function NewProduct() {
                 width={238}
               />
               <Card.Body>
-                <Card.Title>Men's formal suit - Black & White</Card.Title>
+                <Card.Title>Men{`'`}s formal suit - Black & White</Card.Title>
                 <Card.Subtitle>$ 40.0</Card.Subtitle>
                 <Card.Text>Zalora Cloth</Card.Text>
                 <div className="d-flex text-warning">
